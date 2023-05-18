@@ -3,7 +3,9 @@ import ChartStatus from '../ChartDemo/ChartStatus'
 
 const ChartTop = () => {
   return (
-    <div className='row p-3'>
+    <div className='row' 
+      style={{padding: '0 14px'}}
+    >
         <div className="col-4">
             <ChartStatus />
         </div>

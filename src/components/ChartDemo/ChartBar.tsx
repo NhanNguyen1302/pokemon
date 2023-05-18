@@ -3,10 +3,13 @@ import Chart from 'react-apexcharts'
 const ChartBar = () => {
   
   return (
-    <>
+    <div 
+      className='shadow' 
+      style={{borderRadius: 20}}
+    >
       <Chart 
             type="bar"
-            height={400}
+            height={350}
             series= {[
               {name: 'Pending',data : [100, 30, 44]},
               {name: 'Cancle',data: [45, 56,44]},
@@ -23,7 +26,7 @@ const ChartBar = () => {
               legend: {position: 'bottom', fontSize: '16'}
             }}
         />
-    </>
+    </div>
   )
 }
 

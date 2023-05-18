@@ -3,10 +3,10 @@ import Chart from 'react-apexcharts'
 const ChartDonutSmall = () => {
   return (
       <div 
-        className="row shadow p-2" 
+        className="row p-3" 
         style={{borderRadius: 20, width: 400}}
       >
-        <div className="col-6">
+        <div className="col-6 text-left">
           <Chart 
             type="donut"
             series={[689, 340]}
@@ -24,7 +24,7 @@ const ChartDonutSmall = () => {
             }}
           />
         </div>
-        <div className="col-6 mt-4">
+        <div className="col-6 text-center mt-4">
           <h4>9.990</h4>
           <p>Check in</p>
         </div>

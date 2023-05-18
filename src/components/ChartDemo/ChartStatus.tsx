@@ -4,8 +4,8 @@ import React from 'react'
 const ChartStatus = () => {
   return (
       <div 
-        className="row shadow p-3" 
-        style={{ width: 400, borderRadius: 18}}
+        className="row shadow p-4" 
+        style={{ width: 420, borderRadius: 20}}
       >
         <div className="col-6">
           <h3>8.2k</h3>

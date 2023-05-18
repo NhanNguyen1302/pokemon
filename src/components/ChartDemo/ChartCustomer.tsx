@@ -4,8 +4,8 @@ import React from 'react'
 const ChartCustomer = () => {
   return (
     <div 
-      className='card-body p-3' 
-      style={{ lineHeight: 2}}
+      className='shadow p-3' 
+      style={{borderRadius: 20, lineHeight: 2}}
     >
       <h5>Customer Reviews</h5>
       <p>12 Reviews</p>

@@ -1,9 +1,9 @@
 import Chart from 'react-apexcharts'
 
 
-const ChartLine = () => {
+const   ChartLine = () => {
   return (
-        <div className='position-relative'>
+        <div className='position-relative pt-3'>
           <Chart 
             type='line'
             height={350}
@@ -32,7 +32,7 @@ const ChartLine = () => {
               top: 30, left: 18,
             }}
           >
-            <h5>Total Incomes</h5>
+            <h6>Total Incomes</h6>
             <h3>$9,900</h3>
           </span>
           <span 

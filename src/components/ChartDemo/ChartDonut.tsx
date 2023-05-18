@@ -2,7 +2,9 @@ import Chart from 'react-apexcharts'
 
 const ChartDonut = () => {
   return (
-    <>
+    <div 
+      className='shadow h-100' 
+      style={{borderRadius: 20}}>
         <Chart 
             type="donut"
             height={400}
@@ -27,7 +29,7 @@ const ChartDonut = () => {
 
             }}
         />
-    </>
+    </div>
   )
 }
 

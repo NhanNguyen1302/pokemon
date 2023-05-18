@@ -3,17 +3,14 @@ import ChartCustomer from '../ChartDemo/ChartCustomer'
 
 const ChartBottom = () => {
   return (
-        <div className="row p-3">
+        <div className="row" style={{padding: '0 13px'}}>
             <div 
-              className="col-8 shadow p-3" 
+              className="col-8 shadow" 
               style={{borderRadius: 20}}
             >
                 <ChartColumn />
             </div>
-            <div 
-              className="col-4 shadow p-2"
-              style={{borderRadius: 20}}
-            >
+            <div className="col-4">
                 <ChartCustomer />
             </div>
         </div>

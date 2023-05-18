@@ -44,7 +44,7 @@ const ChartColumn = () => {
     }
   }
   return (
-    <div className='row p-3'>
+    <div style={{borderRadius: 20}}>
       <ReactApexChart 
         type='bar'
         width={800}
