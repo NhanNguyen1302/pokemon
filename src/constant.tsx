@@ -1,0 +1,9 @@
+export const BOOKED_ROOM = 'Booked room';
+export const ROOM_AVAIABLE = 'Room Avaiable';
+export const SOLD_OUT = 'Sold Out';
+export const AVAIABLE = 'Avaiable';
+export const ROOM = 'Room';
+export const CHECK_IN = 'Check In';
+export const CHECK_OUT = 'Check Out';
+export const RESERVATION_STATS = 'Reservation Stats';
+export const CATEGORY = ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct']

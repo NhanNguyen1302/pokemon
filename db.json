@@ -1,0 +1,65 @@
+{
+  "chart": {
+    "totalBooking": [
+      {
+        "title": "Total Booking",
+        "views": 8.2,
+        "images": "https://wallpaperaccess.com/full/1493454.jpg"
+      },
+      {
+        "title": "Check In",
+        "views": 311,
+        "images": "https://wallpaperaccess.com/full/659152.jpg"
+      },
+      {
+        "title": "Check Out",
+        "views": 124,
+        "images": "https://wallpaperaccess.com/full/698686.jpg"
+      }
+    ],
+    "totalIncomes": {
+      "total": "39",
+      "percent": "29",
+      "data": [20, 30, 50]
+    },
+    "bookedRoom": [
+      {
+        "name": "Pending1",
+        "data": [20, 50, 100]
+      },
+      {
+        "name": "Cancle",
+        "data": [20, 50, 100]
+      }
+    ],
+    "donut": [36, 66],
+    "donutSmall": [
+      {
+        "data": [689, 340],
+        "totals": 9990,
+        "status": "Check In"
+      },
+      {
+        "data": [556, 440],
+        "totals": 4890,
+        "status": "Check Out"
+      }
+    ],
+    "reservation": [
+      {
+        "name": "'Net Profit'",
+        "data": [44, 55, 57, 56, 61, 58, 33]
+      },
+      {
+       "name": "'Free Cash Flow'",
+        "data": [35, 41, 36, 26, 45, 48, 44]
+      }
+    ],
+    "customer": {
+      "numberReviews": 12,
+      "name": "Jayvion Simon",
+      "images": "https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, consectetur adipisicing elit Iste, unde !"
+    }
+  }
+}

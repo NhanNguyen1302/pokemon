@@ -1,36 +1,51 @@
-import Chart from 'react-apexcharts'
+import { ApexOptions } from "apexcharts";
+import React from "react";
+import Chart from "react-apexcharts";
+import { AVAIABLE, ROOM, ROOM_AVAIABLE, SOLD_OUT } from "../../constant";
 
-const ChartDonut = () => {
+interface ChartDonutProps {
+  data?: number[];
+  height?: number;
+}
+const ChartDonut: React.FC<ChartDonutProps> = ({ 
+  data, 
+  height = 400 
+}) => {
+  const options: ApexOptions = {
+    labels: [SOLD_OUT, AVAIABLE],
+    title: { text: ROOM_AVAIABLE, style: { fontSize: "20" } },
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            total: {
+              label: ROOM,
+              show: true,
+              showAlways: false,
+              fontSize: "14",
+            },
+            value: { fontSize: "30", fontWeight: 400 },
+          },
+        },
+      },
+    },
+    legend: { position: "bottom", fontSize: "16" },
+    dataLabels: { enabled: false },
+  };
   return (
     <div 
-      className='shadow h-100' 
-      style={{borderRadius: 20}}>
-        <Chart 
-            type="donut"
-            height={400}
-            width={400}
-            series={[6890, 3000]}
-            options={{
-              labels: ['Sold out', 'Avaiable'],
-              title: {text: 'Room Available', style: {fontSize: '20'}},
-              plotOptions: {
-                pie: {
-                    donut: {
-                        labels:{
-                            show: true,
-                            total:{label: 'Rooms', show: true, showAlways: false, fontSize:'14'},
-                            value: {fontSize: '30', fontWeight: 400}
-                        }
-                    }
-                }
-              },
-              legend: {position: 'bottom', fontSize: '16'},
-              dataLabels: {enabled: false},
-
-            }}
-        />
+      className="shadow h-100" 
+      style={{ borderRadius: 20 }}
+    >
+      <Chart 
+        type="donut" 
+        height={height}
+        series={data} 
+        options={options} 
+      />
     </div>
-  )
-}
+  );
+};
 
-export default ChartDonut
+export default ChartDonut;

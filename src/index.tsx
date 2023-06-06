@@ -1,6 +1,6 @@
 import React from 'react';
+import { ChartDemo } from 'pages/Charts';
 import ReactDOM from 'react-dom/client';
-import ChartDemo from './pages/Charts/ChartDemo';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
